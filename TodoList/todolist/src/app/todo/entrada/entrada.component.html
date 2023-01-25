@@ -1,0 +1,23 @@
+<div class="rowjustify-content-md-center">
+  <div class="colcol-md-5my-2">
+    <input
+      class="form-control"
+      placeholder="Introduce un nombre para añadir"
+      type="text"
+      [(ngModel)]="tarea"
+      (keyup.enter)="addTarea()"
+    />
+    <input
+      class="form-control"
+      placeholder="Introduce una puntuación para añadir"
+      type="text"
+      [(ngModel)]="punto"
+      (keyup.enter)="addTarea()"
+    />
+  </div>
+  <div class="colcol-md-3my-2">
+    <button type="button" (click)="addTarea()" class="btn btn-primary">
+      Añadir nombre
+    </button>
+  </div>
+</div>

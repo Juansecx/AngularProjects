@@ -1,0 +1,27 @@
+.colcol-md-5my-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.colcol-md-5my-2 input:hover {
+  border: 2px solid rgb(2, 196, 255);
+}
+
+.rowjustify-content-md-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 10px;
+  gap: 20px;
+  background-color: black;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+
+button:hover {
+
+  transform: scale(0.9);
+  
+}

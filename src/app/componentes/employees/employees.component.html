@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col">
+    <ul>
+      <li *ngFor="let employee of employees">
+
+        <a routerLink="/employee" (click)="showEmployee(employee.id)"> 
+        <!-- <a routerLink="/employee"> -->
+          {{ employee.name.first }} {{ employee.name.last }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

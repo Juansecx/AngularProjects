@@ -1,26 +1,22 @@
-import { Component } from '@angular/core';
-import { EmployeesComponent } from '../employees/employees.component';
-
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 @Component({
   selector: 'app-employee',
   templateUrl: './employee.component.html',
-  styleUrls: ['./employee.component.css']
+  styleUrls: ['./employee.component.css'],
 })
-export class EmployeeComponent {
+export class EmployeeComponent implements OnInit {
 
-  employe: any = {}; 
+  employe: any = {};
 
-  constructor( private empleado: EmployeesComponent){
+  constructor(private rutaActiva: ActivatedRoute) {}
 
-    //Que la variable creada sea iual que la que viene del componente Employees
-
-    this.empleado=empleado;
-
-
-  };
+  ngOnInit() {
+    let id = this.rutaActiva.snapshot.paramMap.get('id');
+  }
 
   
 
- 
-
+  
+  
 }

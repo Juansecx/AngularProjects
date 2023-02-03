@@ -9,6 +9,7 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { EmployeeComponent } from './componentes/employee/employee.component';
 import { EmployeesComponent } from './componentes/employees/employees.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

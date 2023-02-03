@@ -6,11 +6,19 @@ import { Posts } from '../interfaces/posts';
 })
 export class PostService {
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private postService: PostService) {
+
+    
+
+  }
 
   getQuery(query: string) {
 
     const url = `https://jsonplaceholder.typicode.com/${query}`;
     return this.http.get<Posts[]>(url);
+
   }
+
+
+
 }
